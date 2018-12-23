@@ -41,6 +41,7 @@ public class TimeOut extends Commands {
 		}
 		
 		final Role nrole = role.get(0);
+		final Member nmember = member;
 		event.getGuild().getController().addSingleRoleToMember(member, nrole).queue();
 		sendMessage("User named: " + member.getNickname() + " has been timed out for " + args[1] + " seconds.");
 		
@@ -58,8 +59,8 @@ public class TimeOut extends Commands {
 					}
 					count--;
 				}
-				event.getGuild().getController().removeSingleRoleFromMember(member, nrole).queue();;
-				sendMessage("Timeout for " + member.getNickname() + " is now over.");
+				event.getGuild().getController().removeSingleRoleFromMember(nmember, nrole).queue();;
+				sendMessage("Timeout for " + nmember.getNickname() + " is now over.");
 			}
 		});
 		t.start();
