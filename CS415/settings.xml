@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class>
+  <feature>true</feature> <!-- ask -->
+  <feature>true</feature> <!-- choose -->
+  <feature>true</feature> <!-- dice -->
+  <feature>true</feature> <!-- rollStat -->
+  <feature>true</feature> <!-- timeout -->
+  <feature>true</feature> <!-- kick -->
+  <feature>true</feature> <!-- ban -->
+</class>
