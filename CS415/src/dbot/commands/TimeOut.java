@@ -26,7 +26,13 @@ public class TimeOut extends Commands {
 		}
 		
 		List<Role> role = null;
-		final Member member = findMemberByString(event, args[0]);
+		Member member = null;
+		try {
+			member = findMemberByString(event, args[0]);
+		} catch (Exception e) {
+			sendMessage("User named " + args[0] + " was not found, perhaps you typed their nickname?");
+			return;
+		}
 		
 		try {
 			role = event.getGuild().getRolesByName("silenced", true);
