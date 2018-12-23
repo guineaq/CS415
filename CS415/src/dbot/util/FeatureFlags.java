@@ -41,7 +41,6 @@ public class FeatureFlags {
 		if (!flag_no_settings) {
 			for(int i = 0; i < featureFlags.getLength(); i++) {
 				String bool = featureFlags.item(i).getTextContent();
-				BotUtil.Debug(i + "==|" + bool);
 				switch(i) {
 				case 0: 
 					if (bool.equals("false"))
