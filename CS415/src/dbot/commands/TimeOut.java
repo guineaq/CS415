@@ -39,7 +39,7 @@ public class TimeOut extends Commands {
 		} catch(Exception e) {
 			sendMessage("Create a new role named 'silenced' in order to use this command.");
 		}
-		
+
 		final Role nrole = role.get(0);
 		final Member nmember = member;
 		event.getGuild().getController().addSingleRoleToMember(member, nrole).queue();
