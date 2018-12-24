@@ -9,3 +9,4 @@ How to compile/run
 + You can run it immediately from IDE or export the project as runnable jar file.
 + In order to see bot in action, you must join a discord server that the bot resides in, permanent invite link is attached [here](https://discord.gg/NDR9WAj)
 
+Note: Mafia Game Bot components are missing, everything else is present.
